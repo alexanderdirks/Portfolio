@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@model Portfolio.Models.ContactViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Contact Joe Mayo</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.From)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.From)
+            @Html.ValidationMessageFor(model => model.From)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Subject)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Subject)
+            @Html.ValidationMessageFor(model => model.Subject)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Message)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Message)
+            @Html.ValidationMessageFor(model => model.Message)
+        </div>
+        <p>
+            <input type="submit" value="Send" />
+        </p>
+    </fieldset>
+}
+
+
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>

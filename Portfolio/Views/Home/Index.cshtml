@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="warning"></div>
+
+<div class="jumbotron">
+    <p class="lead">Big Cool Image Goes HERE</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Art</h2>
+        <a href='@Url.Action("Art","Art")'><img class="lightbox-image" src='@Url.Content("~/img/Lion/lion5.jpg")' /></a>
+    </div>
+    <div class="col-md-4">
+        <h2>DIY</h2>
+        <p>@Html.ActionLink("DIY", "DIY", "DIY", new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Computing</h2>
+        <p>@Html.ActionLink("DIY", "DIY", "DIY", new { @class = "btn btn-default" })</p>
+    </div>
+</div>

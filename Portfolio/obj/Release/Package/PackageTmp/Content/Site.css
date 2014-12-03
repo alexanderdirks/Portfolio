@@ -1,0 +1,55 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Light box image link */
+.lightbox-image-link {
+    display: inline-block;
+    padding: 4px;
+    margin: 0 0.5rem 1rem 0.5rem;
+    background-color: #fff;
+    line-height: 0;
+    -webkit-transition: background-color 0.1s ease-out;
+    -moz-transition: background-color 0.1s ease-out;
+    -o-transition: background-color 0.1s ease-out;
+    transition: background-color 0.1s ease-out;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+    .lightbox-image-link:hover {
+        background-color: #4ae;
+    }
+
+.lightbox-image {
+    width: 20rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
